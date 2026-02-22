@@ -1,38 +1,99 @@
-# Cinematch: AI-Powered Movie Recommender
+# Cinematch – AI-Powered Movie Recommendation System
 
-Cinematch is a full-stack movie discovery application that utilizes **Natural Language Processing (NLP)** and **Content-Based Filtering** to provide personalized recommendations. The system analyzes plot summaries of 5,000+ movies to find mathematical similarities.
+🎯 **Purpose**  
+Cinematch is an AI-driven movie discovery application that recommends similar movies based on plot descriptions using Natural Language Processing and content-based filtering.
 
+🚀 **Why this project matters**
+- Demonstrates practical NLP techniques for recommendation systems
+- Shows end-to-end ML application development
+- Deployed as a user-facing web app on Render
 
+🔗 **Live Demo**
+- 🎬 App: https://cinematch-6sic.onrender.com
 
-## Live Demo
-**Link:** [https://cinematch-6sic.onrender.com](https://cinematch-6sic.onrender.com)
+🧠 **Key Skills Demonstrated**
+- Machine Learning (TF-IDF, similarity modeling)
+- Natural Language Processing (NLP)
+- Python-based Web Apps (Streamlit)
+- Data processing & model serialization
+- Cloud deployment (Render)
 
-## 🛠️ Tech Stack
-- **Frontend/UI:** Streamlit (Python-based Web Framework)
-- **Styling:** Custom CSS (Netflix-inspired Dark Theme)
-- **Machine Learning:** Scikit-learn (TF-IDF Vectorization, Sigmoid Kernel)
-- **Data Handling:** Pandas, NumPy, Joblib
-- **DevOps:** Render Blueprints (Infrastructure as Code via `render.yaml`)
+---
 
-## System Architecture
-The project is built using a **Modular Architecture**, separating the core recommendation engine from the user interface for high maintainability.
+## Project Overview
+Cinematch analyzes plot summaries from over 5,000 movies to compute semantic similarity and recommend movies with comparable themes and narratives.
 
-1.  **Data Preprocessing:** Cleaning and merging TMDB datasets to create a unified metadata pool.
-2.  **Feature Engineering:** Transforming movie overviews into a high-dimensional vector space using **TF-IDF**.
-3.  **Similarity Modeling:** Computing a **Sigmoid Kernel** similarity matrix to determine plot-based scores.
-4.  **Serialization:** Using Joblib to "dump" the heavy matrix into a `.pkl` file for instant loading in production.
+---
 
+## Key Features
+- **Content-Based Recommendations** using plot similarity
+- **NLP Pipeline** with TF-IDF vectorization
+- **Fast Predictions** via precomputed similarity matrix
+- **Clean UI** inspired by Netflix-style dark themes
+- **Production Deployment** using Render Blueprints
 
+---
+
+## Architecture Overview
+- **UI Layer**: Streamlit web application
+- **ML Layer**: TF-IDF vectorizer + Sigmoid Kernel similarity model
+- **Data Layer**: Preprocessed TMDB movie datasets
+- **Deployment**: Render using `render.yaml`
+
+---
+
+## Tech Stack
+
+**Frontend / UI**
+- Streamlit
+- Custom CSS
+
+**Machine Learning & Data**
+- Scikit-learn (TF-IDF, Sigmoid Kernel)
+- Pandas, NumPy
+- Joblib (model serialization)
+
+**DevOps**
+- Render (Infrastructure as Code)
+
+---
 
 ## Project Structure
 ```text
 movie-recommender-system/
-├── app.py              # Main Entry Point (Streamlit UI)
-├── render.yaml         # Infrastructure as Code for Render Deployment
-├── requirements.txt    # Production Dependencies
-├── modules/            # Decoupled Python Modules
-│   ├── logic.py        # Recommendation Engine
-│   ├── styles.py       # Custom CSS Handlers
-│   └── ui_components.py# UI Card Renderers
-├── dumped_obj/         # Serialized Models and Processed Data
-└── notebooks/          # Exploratory Data Analysis & Model Training
+├── app.py               # Streamlit UI entry point
+├── render.yaml          # Render deployment configuration
+├── requirements.txt     # Python dependencies
+├── modules/
+│   ├── logic.py         # Recommendation engine
+│   ├── styles.py        # Custom CSS
+│   └── ui_components.py # UI components
+├── dumped_obj/          # Serialized models & data
+└── notebooks/           # EDA & model training
+```
+
+---
+
+## How It Works (ML Pipeline)
+1. **Data Preprocessing**: Merge and clean TMDB datasets
+2. **Feature Engineering**: Convert movie plots into TF-IDF vectors
+3. **Similarity Modeling**: Compute Sigmoid Kernel similarity scores
+4. **Serialization**: Persist models and matrices using Joblib
+5. **Inference**: Load artifacts instantly for fast recommendations
+
+---
+
+## Running the Project Locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
+
+## Evaluation Notes
+This project highlights:
+- Practical application of NLP in recommendation systems
+- Clean separation between ML logic and UI
+- Efficient use of precomputation for performance
+- Real-world deployment of an ML-powered application
