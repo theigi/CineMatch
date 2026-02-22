@@ -1,0 +1,14 @@
+# --- Local Environments ---
+.venv/
+venv/
+env/
+.vscode/
+.DS_Store
+
+# --- Python Cache ---
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- Large Raw Data ---
+dataset/

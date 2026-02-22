@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # CINEMATCH
 
 
@@ -91,3 +92,62 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+=======
+# 🎬 Cinematch: AI-Powered Movie Recommender
+
+## Project Goal
+Cinematch is an end-to-end movie discovery application that uses Natural Language Processing (NLP) and Content-Based Filtering to recommend films based on plot similarities. The project is built with a modular Python architecture and deployed via Streamlit.
+
+## Architecture
+The project is decoupled into modular Python components to separate UI styling from the recommendation engine.
+
+
+## Steps
+Data Preprocessing: Processed TMDB 5000 datasets to clean and merge movie metadata.
+
+Feature Engineering: Transformed movie overviews into vector space using TF-IDF.
+
+Similarity Modeling: Computed a Sigmoid Kernel matrix to determine plot-based similarity scores.
+
+Modularity: Decoupled the UI styling and recommendation logic into standalone Python modules.
+
+Deployment: Optimized with relative paths and cached data loading for Render/GitLab integration.
+
+## Running the Project
+
+# 1. Setup Environment
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# 2. Launch Application
+streamlit run app.py
+
+## Insights
+Modularity: Separating the logic from the UI allows for faster debugging and cleaner version control.
+
+Performance: Using @st.cache_resource ensures that the heavy similarity matrix is only loaded once, providing a smooth user experience.
+
+UX Impact: A custom CSS bento-box layout provides a modern, responsive interface for movie exploration.
+
+## Tech Stack
+
+- **Frontend/UI: Streamlit (Python-based Web Framework)
+- **Styling: Custom CSS (Netflix-inspired Dark Theme)
+- **Machine Learning**: Scikit-learn (Sigmoid Kernel), Pandas, NumPy
+- **Environment: Python 3.x, Joblib for model serialization
+- **Logic**: Modularized Python scripts
+
+## Project Structure
+The project follows a modular architecture to separate core recommendation logic from the Streamlit UI, ensuring high maintainability and scalability.
+
+movie-recommender-system/
+├── app.py              # Main Entry Point (Streamlit)
+├── modules/            # Decoupled CSS, UI, and Logic modules
+├── dumped_obj/         # Serialized models and processed data
+├── notebooks/          # Exploratory Data Analysis & Model Training
+└── requirements.txt    # Production dependencies
+>>>>>>> 9412fce (Final modular version of Cinematch)

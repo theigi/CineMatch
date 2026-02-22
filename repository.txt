@@ -1,0 +1,17 @@
+CINEMATCH/
+├── app.py                  # Main Entry Point
+├── requirements.txt        # Production Dependencies
+├── .gitignore              # Files to ignore (venv, dataset, etc.)
+├── README.md               # Project Documentation
+├── dumped_obj/             # Model & Processed Data
+│   ├── movie_data_for_app.csv
+│   ├── movie_dataframe_for_app.csv
+│   └── sigmoid_kernel.pkl
+├── modules/                # Code Modules
+│   ├── __init__.py         # (Empty file)
+│   ├── logic.py            # Model Loading & Recommendation Math
+│   ├── styles.py           # CSS Layouts
+│   └── ui_components.py    # Movie Card Components
+└── notebooks/              # Research & Training Phase
+    ├── analysis_commented.ipynb
+    └── Recc_system_tmdb.ipynb
