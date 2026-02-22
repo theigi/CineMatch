@@ -1,10 +1,10 @@
-# 🎬 Cinematch: AI-Powered Movie Recommender
+# Cinematch: AI-Powered Movie Recommender
 
 Cinematch is a full-stack movie discovery application that utilizes **Natural Language Processing (NLP)** and **Content-Based Filtering** to provide personalized recommendations. The system analyzes plot summaries of 5,000+ movies to find mathematical similarities.
 
 
 
-## 🚀 Live Demo
+## Live Demo
 **Link:** [https://cinematch-6sic.onrender.com](https://cinematch-6sic.onrender.com)
 
 ## 🛠️ Tech Stack
@@ -14,7 +14,7 @@ Cinematch is a full-stack movie discovery application that utilizes **Natural La
 - **Data Handling:** Pandas, NumPy, Joblib
 - **DevOps:** Render Blueprints (Infrastructure as Code via `render.yaml`)
 
-## 🧠 System Architecture
+## System Architecture
 The project is built using a **Modular Architecture**, separating the core recommendation engine from the user interface for high maintainability.
 
 1.  **Data Preprocessing:** Cleaning and merging TMDB datasets to create a unified metadata pool.
@@ -24,7 +24,7 @@ The project is built using a **Modular Architecture**, separating the core recom
 
 
 
-## 📂 Project Structure
+## Project Structure
 ```text
 movie-recommender-system/
 ├── app.py              # Main Entry Point (Streamlit UI)
