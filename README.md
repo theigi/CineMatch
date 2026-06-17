@@ -9,6 +9,7 @@ Cinematch is an AI-driven movie discovery application that recommends similar mo
 - Deployed as a user-facing web app on Render
 
 🔗 **Live Demo**
+- 🎬 [Watch Demo](https://www.loom.com/share/b965c2ce551043abb1d94003ddc87007)
 - 🎬 App: https://cinematch-6sic.onrender.com
 
 🧠 **Key Skills Demonstrated**
